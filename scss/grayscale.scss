@@ -88,7 +88,7 @@ a {
   .navbar-brand {
     font-weight: 500;
     font-style: normal;
-    margin-left: -70px;
+    margin-left: 0px;
 
 
   }
@@ -151,20 +151,21 @@ a {
 
   color: black;
 
-  background: url('../img/stocks/the-kura_list.jpg') no-repeat center center scroll;
+  background: url('../img/stocks/bottlescut.jpg') no-repeat center center scroll;
   background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover auto;
+  -webkit-background-size: cover ;
+  -moz-background-size: cover ;
+  -o-background-size: cover ;
+  background-size: cover contain;
 
   .intro-body {
     display: flex;
+    margin-top: 3px;
 
     vertical-align: middle;
     .brand-heading {
-      font-size: 70px;
-      margin-top: 25px;
+      font-size: 65px;
+      margin-top: -7px;
     }
     .intro-text {
       font-size: 18px;
@@ -238,6 +239,7 @@ a {
 }
 
 .content-section {
+
   padding-top: 100px;
   padding-bottom: 150px;
 }
@@ -245,6 +247,17 @@ a {
 .download-section {
   color: black;
   background: url('../img/pre_waza-main.jpg') no-repeat center center scroll;
+  background-color: black;
+  opacity: 1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover contain;
+}
+
+.contact-section {
+  color: black;
+  background: url('../img/events_main01.jpg') no-repeat center center scroll;
   background-color: black;
   opacity: 1;
   -webkit-background-size: cover;
