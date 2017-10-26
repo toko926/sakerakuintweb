@@ -1,5 +1,10 @@
+//Import：今のところ何もなし。variableにはメインカラーが指定してある。
+
 @import 'variables.scss';
 @import 'mixins.scss';
+
+//ここから標準bootstrapの上書き。
+
 body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -9,7 +14,7 @@ body {
   height: 100%;
 
   color: white;
-  background-color: black;
+  background-color: transparent;
 }
 
 html {
@@ -27,7 +32,15 @@ h2 {
   letter-spacing: 1px;
   text-transform: uppercase;
 },
-h3,
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+
+  margin: 0 0 35px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+},
 h4,
 h5,
 h6 {
@@ -69,34 +82,32 @@ a {
   }
 }
 
+//ココから個別セクションのCSS
+
+
+//メインナビゲーションバー
+
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-  margin-bottom: 0;
-  opacity: 0.8;
-  text-transform: uppercase;
-
+  margin-bottom: 10px;
   border-bottom: 1px solid fade-out(white, .7);
-  background-color: black;
+    background-color: opacify(white, 0.3);
   .navbar-toggler {
     font-size: 14px;
-
     padding: 11px;
-
-    color: white;
-    border: 1px solid white;
+    color: black;
+    border: 1px solid black;
   }
   .navbar-brand {
     font-weight: 500;
     font-style: normal;
-    margin-left: 0px;
-
-
+    position: relative;
   }
   a {
-    color: white;
+    color: black;
   }
   .navbar-nav {
+    padding-bottom: 5px;
     .nav-item {
       -webkit-transition: background 0.3s ease-in-out;
       -moz-transition: background 0.3s ease-in-out;
@@ -116,20 +127,17 @@ a {
   @media(min-width:992px) {
     padding-top: 20px;
     padding-bottom: 20px;
-
     -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     letter-spacing: 1px;
-
     border-bottom: none;
     background: transparent;
     &.navbar-shrink {
       padding-top: 10px;
       padding-bottom: 10px;
-
-      border-bottom: 1px solid fade-out(white, .7);
-      background: black;
+      border-bottom: 1px solid fade-out(transparent, .7);
+      background-color: opacify(white, 0.3);
     }
     .nav-link.active {
       outline: none;
@@ -141,32 +149,35 @@ a {
   }
 }
 
+//マストヘッド
+
 .masthead {
-  display: table;
+  display: flex;
 
   width: 100%;
   height: auto;
-  padding: 210px 0;
-
-  text-align: center;
+  margin-top: 50px;
+  padding-top: 10px;
+  margin-bottom: 30px;
 
   color: black;
 
-  background: url('../img/stocks/MastHead.jpg') no-repeat center center scroll;
-  background-color: black;
+  background: url('../img/MastHead.jpg') no-repeat center center scroll;
+  background-color: white;
   -webkit-background-size: cover ;
   -moz-background-size: cover ;
-  -o-background-size: cover ;
-  background-size: cover contain;
+  -o-background-size: cover;
+  background-size: cover;
 
   .intro-body {
     display: flex;
     margin-top: 3px;
-
     vertical-align: middle;
+
     .brand-heading {
-      font-size: 65px;
-      margin-top: -7px;
+      font-size: 100px;
+      margin-left: 8px;
+      margin-top: 20px;
     }
     .intro-text {
       font-size: 18px;
@@ -174,11 +185,13 @@ a {
     }
   }
   @media(min-width:768px) {
+    background-size: contain;
     height: 100%;
     padding: 0;
     .intro-body {
       .brand-heading {
         font-size: 100px;
+        margin-left: 8px;
         color:black;
         opacity: 1;
       }
@@ -191,76 +204,148 @@ a {
   }
 }
 
-.btn-circle-masthead {
-  font-size: 26px;
 
-  width: 55px;
-  height: 55px;
-  margin-top: 400px;
-  line-height: 38px;
+//ここからaboutセクション
 
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-
-  color: white;
-  border: 2px solid white;
-  border-radius: 100% !important;
-  background: transparent;
-  &:focus,
-  &:hover {
-    color: white;
-    outline: none;
-    background: fade-out(white, .9);
+.about-section {
+  background-color: black;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  h2 {
+    font-size: 60px;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+  h3 {
+    font-size: 40px;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+  p {
+    text-align: left;
+    margin-top: -30px;
+    margin-left: 15px;
   }
 }
 
-.btn-circle-about {
-    font-size: 26px;
+.container-about {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin-bottom: auto;
+}
 
-    width: 55px;
-    height: 55px;
-    margin-top: 50px;
-    line-height: 38px;
+.about-story {
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  padding-top: 50px;
+  padding-bottom: auto;
+}
 
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
+.about-photo-frame {
+  background-color: transparent;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  height: 500px;
+  width: contain;
+}
 
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height:500px;
+    width: cover;
+  }
+  p {
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 10px;
     color: white;
-    border: 2px solid white;
-    border-radius: 100% !important;
-    background: transparent;
-    &:focus,
-    &:hover {
-      color: white;
-      outline: none;
-      background: fade-out(white, .9);
-    }
+  }
 }
 
-.content-section {
+// .btn-circle-about {
+//     font-size: 26px;
+//
+//     width: 55px;
+//     height: 55px;
+//     margin-top: 50px;
+//     line-height: 38px;
+//
+//     -webkit-transition: background 0.3s ease-in-out;
+//     -moz-transition: background 0.3s ease-in-out;
+//     transition: background 0.3s ease-in-out;
+//
+//     color: white;
+//     border: 2px solid white;
+//     border-radius: 100% !important;
+//     background: transparent;
+//     &:focus,
+//     &:hover {
+//       color: white;
+//       outline: none;
+//       background: fade-out(white, .9);
+//     }
+// }
 
-  padding-top: 100px;
-  padding-bottom: 150px;
-}
+
+
+//ここからdownloadセクション
 
 .download-section {
   color: black;
+  display: flex;
   background: url('../img/pre_waza-main.jpg') no-repeat center center scroll;
-  background-color: black;
+  background-color: transparent;
+  padding-top: 100px;
+  padding-bottom: 100px;
   opacity: 1;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover contain;
+  background-size: cover;
+  h2 {
+    align-items: left;
+    text-align: left;
+    font-size: 60px;
+    margin-bottom: 30px;
+    padding-top: -10px;
+    margin-left: 0px;
+  }
+  h3 {
+    text-align: left;
+    font-size: 40px;
+    margin-top: -30px;
+    margin-left: 0px;
+  }
+  p {
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
 }
 
+.btn-download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//ここからcontactセクション
+
 .contact-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
   color: black;
-  background: url('../img/events_main01.jpg') no-repeat center center scroll;
-  background-color: black;
-  opacity: 1;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -307,8 +392,9 @@ a {
 }
 
 .btn-social {
-  color: white;
-  border: 1px solid white;
+  color: black;
+  border: 1px solid black;
+  margin-left: 5px;
   background-color: transparent;
   &:focus,
   &:hover {
