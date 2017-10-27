@@ -37,6 +37,19 @@
 
 })(jQuery); // End of use strict
 
+
+
+//card contents js
+ $('.buy').click(function(){
+  $('.bottom').addClass("clicked");
+});
+
+$('.remove').click(function(){
+  $('.bottom').removeClass("clicked");
+});
+
+
+
 // Google Maps Scripts
 var map = null;
 // When the window has finished loading create our google map below
