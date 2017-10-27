@@ -210,7 +210,7 @@ a {
 .product-section {
   display: flex;
   color: black;
-  background-color: white;
+  background-color: transparent;
   padding-top: 30px;
   padding-bottom: 30px;
   height: auto; }
@@ -246,10 +246,9 @@ a {
   padding-bottom: 70px; }
 
 .wrapper {
-  width: 300px;
+  width: 250px;
   height: 500px;
-  background: white;
-  border: black;
+  background: transparent;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -364,7 +363,7 @@ a {
         position: relative;
         float: left; }
         .wrapper .container .bottom .left .details {
-          padding: 20px;
+          padding: 30px;
           float: left;
           width: calc(70% - 40px); }
         .wrapper .container .bottom .left .taste {
@@ -397,7 +396,7 @@ a {
           transform: translateY(-100%); }
   .wrapper .inside {
     z-index: 9;
-    background: black;
+    background: gray;
     border-radius: white;
     width: 140px;
     height: 140px;
