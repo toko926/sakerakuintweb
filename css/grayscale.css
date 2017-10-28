@@ -134,7 +134,7 @@ a {
   padding-top: 10px;
   margin-bottom: 30px;
   color: black;
-  background: url("../img/MastHead.jpg") no-repeat center center scroll;
+  background: url("../img/MastHead.png") no-repeat center center scroll;
   background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -209,7 +209,8 @@ a {
   align-items: center;
   margin-right: 50px;
   padding-top: 50px;
-  padding-bottom: auto; }
+  padding-bottom: auto;
+  margin-top: 20px; }
 
 .about-photo-frame {
   background-color: transparent;
@@ -218,20 +219,35 @@ a {
   background-repeat: no-repeat;
   opacity: 1;
   height: 500px;
-  width: contain; }
+  width: contain;
+  border-radius: 10px;
+  padding-top: 50px; }
 
 .photo {
   display: flex;
   justify-content: center;
   align-items: center; }
   .photo img {
-    height: 500px;
-    width: cover; }
+    height: 400px;
+    width: 280px; }
   .photo p {
     text-align: center;
     margin-top: -30px;
     margin-left: 10px;
     color: white; }
+
+.founder {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .founder p {
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    margin: 0;
+    margin-top: -5px;
+    padding-top: 5px;
+    padding-bottom: 0px; }
 
 .product-section {
   display: flex;
@@ -252,8 +268,6 @@ a {
     padding-top: 20px;
     padding-left: 10px;
     margin-left: 0px; }
-    .product-section h2 .header {
-      color: red; }
   .product-section h3 {
     text-align: left;
     font-size: 40px;
@@ -486,20 +500,22 @@ a {
 
 .special-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
   background-color: black;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   height: auto; }
   .special-section h2 {
+    font-family: ltc-bodoni-175, serif;
+    font-style: normal;
+    font-weight: 400;
     align-items: left;
     text-align: left;
-    font-size: 50px;
-    margin-bottom: 30px;
-    padding-top: -10px;
-    padding-top: 10px;
+    font-size: 30px;
+    margin-bottom: -30px;
+    margin-left: -30px;
+    padding-top: 20px;
+    padding-left: 10px;
     margin-left: 0px; }
   .special-section h3 {
     text-align: left;
@@ -510,45 +526,202 @@ a {
     text-align: center;
     margin-top: 0px;
     margin-left: 15px; }
-  @media (max-width: 750px) {
-    .special-section h2 {
-      font-size: 45px; } }
 
 .special-container {
-  align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: transparent;
   justify-content: center;
   align-items: center;
-  background-color: transparent; }
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px; }
 
 .special-item {
-  background-color: white;
-  background-size: cover;
-  height: 400px;
-  width: auto;
-  flex-basis: 220px;
-  margin: 10px;
-  margin-left: 40px; }
+  width: 300px;
+  height: 500px;
+  background: white;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+  border: 0.5px solid #ddd9d4; }
+  .special-item:hover {
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2); }
+  .special-item h2 {
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    margin-top: -5px;
+    padding-top: 5px;
+    padding-bottom: 0px; }
+  .special-item h1 {
+    color: black;
+    font-style: normal;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 12px;
+    padding-bottom: 0px; }
+  .special-item p {
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px; }
+  .special-item .container {
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+    .special-item .container .header {
+      text-align: left; }
+    .special-item .container .top {
+      height: 15%;
+      width: 100%;
+      background-color: transparent;
+      margin-bottom: 5px;
+      -webkit-background-size: 100%;
+      -moz-background-size: 100%;
+      -o-background-size: 100%;
+      background-size: 100%;
+      margin-top: 8px;
+      border-bottom: 0.5px solid #ddd9d4;
+      border-top: 0.5px solid #ddd9d4; }
+      .special-item .container .top p {
+        color: black;
+        text-align: center;
+        font-style: normal;
+        font-size: 15px;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px; }
+    .special-item .container .body-okome {
+      height: 65%;
+      width: 100%;
+      background: url("../img/okome.jpg") no-repeat center center scroll;
+      background-color: transparent;
+      border-radius: 10px;
+      -webkit-background-size: 100%;
+      -moz-background-size: 100%;
+      -o-background-size: 100%;
+      background-size: cover;
+      margin: 0; }
+    .special-item .container .body-meisui {
+      height: 65%;
+      width: 100%;
+      background: url("../img/meisui.jpg") no-repeat center center scroll;
+      background-color: transparent;
+      border-radius: 10px;
+      -webkit-background-size: 100%;
+      -moz-background-size: 100%;
+      -o-background-size: 100%;
+      background-size: cover;
+      margin: 0; }
+    .special-item .container .body-kuramoto {
+      height: 65%;
+      width: 100%;
+      background: url("../img/kuramoto.jpg") no-repeat center center scroll;
+      background-color: transparent;
+      border-radius: 10px;
+      -webkit-background-size: 100%;
+      -moz-background-size: 100%;
+      -o-background-size: 100%;
+      background-size: cover;
+      margin: 0; }
+    .special-item .container .body-design {
+      height: 65%;
+      width: 100%;
+      background: url("../img/design.jpg") no-repeat center center scroll;
+      background-color: transparent;
+      border-radius: 10px;
+      -webkit-background-size: 100%;
+      -moz-background-size: 100%;
+      -o-background-size: 100%;
+      background-size: contain;
+      margin: 0; }
+    .special-item .container .photo {
+      width: 30%;
+      height: 30%; }
+      .special-item .container .photo .icon {
+        position: absolute;
+        right: 130px;
+        top: 240px;
+        color: black;
+        opacity: 1; }
+        .special-item .container .photo .icon a:visited {
+          color: white; }
+    .special-item .container .bottom {
+      height: 10%;
+      width: 100%;
+      background-color: transparent;
+      margin-top: 0px;
+      margin-bottom: -5px; }
+      .special-item .container .bottom p {
+        color: black;
+        text-align: left;
+        line-height: 95%;
+        font-size: 13px;
+        margin-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px; }
+    .special-item .container .footer {
+      height: 5%;
+      width: 100%;
+      background-color: transparent;
+      margin-top: -10px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      border-top: 0.5px solid #ddd9d4; }
+      .special-item .container .footer p {
+        color: black;
+        text-align: center;
+        font-size: 12px;
+        margin-left: 5px;
+        margin-top: 10px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 5px; }
 
 .download-section {
   color: black;
   display: flex;
   background: url("../img/pre_waza-main.jpg") no-repeat center center scroll;
   background-color: transparent;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: auto;
+  margin-bottom: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
   .download-section h2 {
+    font-family: ltc-bodoni-175, serif;
+    font-style: normal;
+    font-weight: 400;
     align-items: left;
     text-align: left;
-    font-size: 60px;
-    margin-bottom: 30px;
-    padding-top: -10px;
+    font-size: 30px;
+    margin-bottom: -30px;
+    margin-left: -30px;
+    padding-top: 20px;
+    padding-left: 10px;
     margin-left: 0px; }
   .download-section h3 {
     text-align: left;
@@ -559,6 +732,25 @@ a {
     text-align: center;
     margin-top: 0px;
     margin-left: 15px; }
+  .download-section .message {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .download-section .pdf-image-frame {
+    background-color: transparent;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 1;
+    height: 500px;
+    width: contain; }
+  .download-section .pdf-image {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .download-section .pdf-image img {
+      height: 500px;
+      width: cover; }
   @media (max-width: 750px) {
     .download-section h2 {
       font-size: 45px; } }
@@ -567,7 +759,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px; }
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .contact-section {
   padding-top: 60px;
