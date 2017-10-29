@@ -40,8 +40,8 @@ h2 {
   text-transform: uppercase;
 },
 h3 {
-  font-family: ltc-bodoni-175, serif;
-  font-style: italic;
+  font-family: "kozuka-mincho-pro",serif;
+  font-style: normal;
   font-weight: 400;
 
   margin: 0 0 35px;
@@ -366,6 +366,12 @@ a {
   padding-bottom: 70px;
 }
 
+.product-about {
+  margin-left:50px;
+  text-align: center;
+  text-wrap:wrap;
+}
+
 .wrapper{
   width: 250px;
   height: 500px;
@@ -613,17 +619,85 @@ a {
   }
 }
 
+.product-modal {
+  min-height: 500px;
+  max-height: 667px;
+  min-width: 300px;
+  max-width: 375px;
+  background-color: transparent;
+  border-radius: 20px;
+  p {
+    font-size: 10px;
+  }
+}
 
+.modal-contents {
+  background-color: transparent;
+  margin-top: 180px;
+  max-width: 320px;
+  margin-left: 10px;
+  padding-left: 50px;
+  .header {
+    margin-top: 0px;
+    border-bottom: 0.5px solid #ddd9d4;
+    p {
+      margin-bottom: 0;
+      font-size: 10px;
+    }
+  }
+  table{
+      text-align:left;
+      margin-top: 20px;
+      width:100%;
+    }
+    h1, p, table{
+      color: white;
+      th {
+        font-size:20px;
+      }
+      td {
+        font-size:10px;
+        font-style: normal;
+      }
+    }
+    p {
+      font-size:20px;
+    }
+    .story {
+      margin-top: auto;
+      margin-left: -10px;
+      h1 {
+        font-style: normal;
+        margin-top: 5px;
+        margin-left: 10px;
+        font-size:25px;
+        margin-bottom: 5px;;
+      }
+      p {
+        font-size:12px;
+        margin-left: 10px;
+        margin-right: 5px;
+        text-align:left;
+      }
+    }
+  }
 
 //ここからspecialセクション
 
 .special-section {
+  background: url('../img/kuramoto.jpg') no-repeat center center scroll;
+  height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: transparent;
   display: flex;
   color: white;
   background-color: black;
   padding-top: 30px;
   padding-bottom: 30px;
-  height:auto;
+  margin-bottom: 30px;
   h2 {
     font-family: ltc-bodoni-175, serif;
     font-style: normal;
@@ -638,6 +712,7 @@ a {
     margin-left: 0px;
   }
   h3 {
+    font-family: "kozuka-mincho-pro",serif;
     text-align: left;
     font-size: 40px;
     margin-top: -30px;
@@ -665,10 +740,16 @@ a {
   padding-bottom: 0px;
 }
 
+.special-about {
+  margin-left:50px;
+  text-align: center;
+  text-wrap:wrap;
+}
+
 .special-item {
   width: 300px;
   height: 500px;
-  background: white;
+  background: transparent;
   margin: auto;
   padding: 0;
   position: relative;
@@ -677,7 +758,7 @@ a {
   box-shadow: 0;
   transform: scale(0.95);
   transition: box-shadow 0.5s, transform 0.5s;
-  border: 0.5px solid #ddd9d4;
+  border: 0.5px solid gray;
   &:hover{
     transform: scale(1);
     box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
@@ -727,8 +808,8 @@ a {
       -o-background-size: 100%;
       background-size: 100%;
       margin-top: 8px;
-      border-bottom: 0.5px solid #ddd9d4;
-      border-top: 0.5px solid #ddd9d4;
+      border-bottom: 0.5px solid gray;
+      border-top: 0.5px solid gray;
       p {
         color: black;
         text-align: center;
@@ -743,6 +824,7 @@ a {
       height: 65%;
       width:100%;
       background: url("../img/okome.jpg")no-repeat center center scroll;
+      opacity: 0.9;
       background-color: transparent;
       border-radius: 10px;
       -webkit-background-size: 100%;
@@ -755,6 +837,7 @@ a {
       height: 65%;
       width:100%;
       background: url("../img/meisui.jpg")no-repeat center center scroll;
+      opacity: 0.9;
       background-color: transparent;
       border-radius: 10px;
       -webkit-background-size: 100%;
@@ -766,7 +849,8 @@ a {
     .body-kuramoto {
       height: 65%;
       width:100%;
-      background: url("../img/kuramoto.jpg")no-repeat center center scroll;
+      opacity: 0.9;
+      background: url("../img/toji.jpg")no-repeat right center scroll;
       background-color: transparent;
       border-radius: 10px;
       -webkit-background-size: 100%;
@@ -778,13 +862,14 @@ a {
     .body-design {
       height: 65%;
       width:100%;
-      background: url("../img/design.jpg")no-repeat center center scroll;
+      opacity: 0.9;
+      background: url("../img/design2.jpg")no-repeat center center scroll;
       background-color: transparent;
       border-radius: 10px;
       -webkit-background-size: 100%;
       -moz-background-size: 100%;
       -o-background-size: 100%;
-      background-size: contain;
+      background-size: cover;
       margin: 0;
     }
     .photo {
@@ -826,7 +911,7 @@ a {
     margin-top: -10px;
     margin-bottom: 0px;
     padding-top: 0px;
-    border-top: 0.5px solid #ddd9d4;
+    // border-top: 0.5px solid black;
     p {
       color: black;
       text-align: center;
@@ -848,10 +933,10 @@ a {
   display: flex;
   background: url('../img/pre_waza-main.jpg') no-repeat center center scroll;
   background-color: transparent;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   height: auto;
-  margin-bottom: auto;
+  margin-bottom: 0px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -906,7 +991,7 @@ a {
   }
   @media(max-width:750px) {
     h2 {
-      font-size: 45px;
+      font-size: 30px;
     }
   }
 }
@@ -922,14 +1007,37 @@ a {
 //ここからcontactセクション
 
 .contact-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  color: white;
-  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+  color: black;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover contain;
+
+  h2 {
+    font-family: ltc-bodoni-175, serif;
+    font-style: normal;
+    font-weight: 400;
+    align-items: left;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-left: -30px;
+    padding-top:  0px;
+    padding-left: 10px;
+    margin-left: 0px;
+  }
+}
+
+.contact-message {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  p {
+   margin-bottom: 0px;
+  }
 }
 
 #map {
@@ -947,8 +1055,9 @@ a {
 }
 
 .btn {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: ltc-bodoni-175, serif;
+  font-style: normal;
+  font-weight: 200;
   width:200px;
 
   -webkit-transition: all 0.3s ease-in-out;
@@ -961,7 +1070,26 @@ a {
 
 .btn-default {
   color: black;
+  font-family: ltc-bodoni-175, serif;
+  font-style: normal;
+  font-weight: 200;
   border: 1px solid black;
+  background-color: transparent;
+  &:focus,
+  &:hover {
+    color: red;
+    border: 1px solid red;
+    outline: none;
+    background-color: none;
+  }
+}
+.btn-modal {
+  margin-left: 35px;
+  color: white;
+  font-family: ltc-bodoni-175, serif;
+  font-style: normal;
+  font-weight: 200;
+  border: 1px solid white;
   background-color: transparent;
   &:focus,
   &:hover {
@@ -973,8 +1101,11 @@ a {
 }
 
 .btn-social {
-  color: white;
-  border: 1px solid white;
+  font-family: ltc-bodoni-175, serif;
+  font-style: normal;
+  font-weight: 200;
+  color: black;
+  border: 1px solid black;
   margin-left: 5px;
   margin-top: 10px;
   background-color: transparent;
