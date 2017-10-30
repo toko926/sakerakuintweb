@@ -134,7 +134,7 @@ a {
   padding-top: 10px;
   margin-bottom: 30px;
   color: black;
-  background: url("../img/MastHead.png") no-repeat center center scroll;
+  background: url("../img/compressed/MastHead-min.png") no-repeat center center scroll;
   background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -171,7 +171,7 @@ a {
       font-size: 18px; }
   @media (max-width: 750px) {
     .masthead {
-      background: url("../img/mastheadmini3.jpg") no-repeat center center scroll;
+      background: url("../img/compressed/mastheadmini3-min.jpg") no-repeat center center scroll;
       background-size: contain;
       -webkit-background-size: contain contain;
       -moz-background-size: contain contain;
@@ -351,7 +351,7 @@ a {
     .wrapper .container .top-chiyogiku {
       height: 80%;
       width: 100%;
-      background: url("../img/stocks/yawara-chiyonogiku") no-repeat center center;
+      background: url("../img/compressed/yawara-chiyonogiku") no-repeat center center;
       -webkit-background-size: 100%;
       -moz-background-size: 100%;
       -o-background-size: 100%;
@@ -361,7 +361,7 @@ a {
     .wrapper .container .top-chiyogiku {
       height: 80%;
       width: 100%;
-      background: url("../img/stocks/yawara-chiyonogiku.jpg") no-repeat center center;
+      background: url("../img/compressed/yawara-chiyonogiku-min.jpg") no-repeat center center;
       -webkit-background-size: 100%;
       -moz-background-size: 100%;
       -o-background-size: 100%;
@@ -370,7 +370,7 @@ a {
     .wrapper .container .top-chigonoiwa {
       height: 80%;
       width: 100%;
-      background: url("../img/stocks/yawara-chigonoiwa.jpg") no-repeat center center;
+      background: url("../img/compressed/yawara-chigonoiwa-min.jpg") no-repeat center center;
       -webkit-background-size: 100%;
       -moz-background-size: 100%;
       -o-background-size: 100%;
@@ -379,7 +379,7 @@ a {
     .wrapper .container .top-hananomai {
       height: 80%;
       width: 100%;
-      background: url("../img/stocks/yawara-hananomai.jpg") no-repeat center center;
+      background: url("../img/compressed/yawara-hananomai-min.jpg") no-repeat center center;
       -webkit-background-size: 100%;
       -moz-background-size: 100%;
       -o-background-size: 100%;
@@ -388,7 +388,7 @@ a {
     .wrapper .container .top-iwamura {
       height: 80%;
       width: 100%;
-      background: url("../img/stocks/yawara-iwamura.jpg") no-repeat center center;
+      background: url("../img/compressed/yawara-iwamura-min.jpg") no-repeat center center;
       -webkit-background-size: 100%;
       -moz-background-size: 100%;
       -o-background-size: 100%;
@@ -397,7 +397,7 @@ a {
     .wrapper .container .top-komachi {
       height: 80%;
       width: 100%;
-      background: url("../img/stocks/yawara-komachi.jpg") no-repeat center center;
+      background: url("../img/compressed/yawara-komachi-min.jpg") no-repeat center center;
       -webkit-background-size: 100%;
       -moz-background-size: 100%;
       -o-background-size: 100%;
@@ -406,7 +406,7 @@ a {
     .wrapper .container .top-yamada {
       height: 80%;
       width: 100%;
-      background: url("../img/stocks/yawara-yamada.jpg") no-repeat center center;
+      background: url("../img/compressed/yawara-yamada-min.jpg") no-repeat center center;
       -webkit-background-size: 100%;
       -moz-background-size: 100%;
       -o-background-size: 100%;
@@ -415,7 +415,7 @@ a {
     .wrapper .container .top-tenryo {
       height: 80%;
       width: 100%;
-      background: url("../img/stocks/waza-tenryo.jpg") no-repeat center center;
+      background: url("../img/compressed/waza-tenryo-min.jpg") no-repeat center center;
       -webkit-background-size: 100%;
       -moz-background-size: 100%;
       -o-background-size: 100%;
@@ -424,7 +424,7 @@ a {
     .wrapper .container .top-chiyonogikuwaza {
       height: 80%;
       width: 100%;
-      background: url("../img/stocks/waza-chiyonogiku.jpg") no-repeat center center;
+      background: url("../img/compressed/waza-chiyonogiku-min.jpg") no-repeat center center;
       -webkit-background-size: 100%;
       -moz-background-size: 100%;
       -o-background-size: 100%;
@@ -433,7 +433,7 @@ a {
     .wrapper .container .top-yamadawaza {
       height: 80%;
       width: 100%;
-      background: url("../img/stocks/waza-yamada.jpg") no-repeat center center;
+      background: url("../img/compressed/waza-yamada-min.jpg") no-repeat center center;
       -webkit-background-size: 100%;
       -moz-background-size: 100%;
       -o-background-size: 100%;
@@ -586,7 +586,7 @@ a {
       text-align: left; }
 
 .special-section {
-  background: url("../img/kuramoto.jpg") no-repeat center center scroll;
+  background: url("../img/compressed/kuramoto-min.jpg") no-repeat center center scroll;
   height: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -732,7 +732,7 @@ a {
 .download-section {
   color: black;
   display: flex;
-  background: url("../img/pre_waza-main.jpg") no-repeat center center scroll;
+  background: url("../img/compressed/pre_waza-main-min.jpg") no-repeat center center scroll;
   background-color: transparent;
   padding-top: 20px;
   padding-bottom: 20px;
