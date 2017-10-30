@@ -540,13 +540,14 @@ a {
   min-width: 300px;
   max-width: 375px;
   background-color: transparent;
-  border-radius: 20px; }
+  border-radius: 20px;
+  -webkit-overflow-scrolling: touch; }
   .product-modal p {
     font-size: 10px; }
 
 .modal-contents {
   background-color: transparent;
-  margin-top: 180px;
+  margin-top: 120px;
   max-width: 320px;
   margin-left: 10px;
   padding-left: 50px; }
