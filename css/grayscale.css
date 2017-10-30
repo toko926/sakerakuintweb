@@ -228,8 +228,10 @@ a {
   justify-content: center;
   align-items: center; }
   .photo img {
-    height: 400px;
-    width: 280px; }
+    height: 380px;
+    width: 300px;
+    border-radius: 10px;
+    border: solid 0.7px gray; }
   .photo p {
     text-align: center;
     margin-top: -30px;
@@ -245,8 +247,21 @@ a {
     font-size: 15px;
     font-style: normal;
     margin: 0;
-    margin-top: -5px;
+    margin-top: 10px;
     padding-top: 5px;
+    padding-bottom: 0px; }
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .profile p {
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    margin: 0;
+    margin-top: 0px;
+    padding-top: 0px;
     padding-bottom: 0px; }
 
 .product-section {
@@ -677,10 +692,9 @@ a {
         margin-top: 0px;
         padding-top: 0px;
         padding-bottom: 0px; }
-    .special-item .container .body-okome {
+    .special-item .container .body-meisui {
       height: 65%;
       width: 100%;
-      background: url("../img/okome.jpg") no-repeat center center scroll;
       opacity: 0.9;
       background-color: transparent;
       border-radius: 10px;
@@ -689,10 +703,10 @@ a {
       -o-background-size: 100%;
       background-size: cover;
       margin: 0; }
-    .special-item .container .body-meisui {
+    .special-item .container .body-okome {
       height: 65%;
       width: 100%;
-      background: url("../img/meisui.jpg") no-repeat center center scroll;
+      background: url("../img/okome.jpg") no-repeat center center scroll;
       opacity: 0.9;
       background-color: transparent;
       border-radius: 10px;
