@@ -663,6 +663,7 @@ a {
   background-color: transparent;
   border-radius: 20px;
   -webkit-overflow-scrolling: touch;
+  overflow: auto;
   p {
     font-size: 10px;
   }
@@ -670,7 +671,7 @@ a {
 
 .modal-contents {
   background-color: transparent;
-  margin-top: 120px;
+  margin-top: 80px;
   max-width: 320px;
   margin-left: 10px;
   padding-left: 50px;
