@@ -59,7 +59,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.5px;
   margin: 0 0 25px; }
-  @media (min-width: 768px) {
+  @media (min-width: 481px) {
     p {
       font-size: 18px;
       line-height: 1.6;
@@ -105,7 +105,7 @@ a {
       #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
         outline: none;
         background-color: transparent; }
-  @media (min-width: 992px) {
+  @media (min-width: 480px) {
     #mainNav {
       padding-top: 20px;
       padding-bottom: 20px;
@@ -148,7 +148,7 @@ a {
     align-items: center;
     margin-left: -40px;
     margin-top: 500px; }
-    @media (min-width: 750px) {
+    @media (min-width: 481px) {
       .masthead .btn-row {
         margin-left: -630px; } }
   .masthead .video-watch {
@@ -167,9 +167,12 @@ a {
       border: white;
       margin-left: 8px;
       margin-top: 20px; }
+      @media (max-width: 768px) {
+        .masthead .intro-body .brand-heading {
+          font-size: 60px; } }
     .masthead .intro-body .intro-text {
       font-size: 18px; }
-  @media (max-width: 750px) {
+  @media (max-width: 480px) {
     .masthead {
       background: url("../img/compressed/mastheadmini3-min.jpg") no-repeat center center scroll;
       background-size: contain;
@@ -488,7 +491,7 @@ a {
       opacity: 1; }
       .wrapper .inside .icon a:visited {
         color: white; }
-    @media (min-width: 992px) {
+    @media (min-width: 801px) {
       .wrapper .inside:hover {
         width: 100%;
         right: 0;
@@ -783,7 +786,7 @@ a {
     .download-section .pdf-image img {
       height: 500px;
       width: cover; }
-  @media (max-width: 750px) {
+  @media (max-width: 480px) {
     .download-section h2 {
       font-size: 30px; } }
 
@@ -828,7 +831,7 @@ a {
   width: 100%;
   height: 300px; }
 
-@media (min-width: 992px) {
+@media (min-width: 481px) {
   .content-section {
     padding-top: 100px;
     padding-bottom: 100px; }
@@ -906,10 +909,10 @@ a {
 
 ul.banner-social-buttons {
   margin-top: 10px; }
-  @media (max-width: 1199px) {
+  @media (max-width: 800px) {
     ul.banner-social-buttons {
       margin-top: 15px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 480px) {
     ul.banner-social-buttons li {
       display: block;
       margin-top: 10px;
